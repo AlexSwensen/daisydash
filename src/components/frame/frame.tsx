@@ -6,7 +6,7 @@ export default function Frame() {
         <Navbar></Navbar>
         <div className={styles.frameContent}>
 
-            <h1>Coming soon!</h1>
+            <h1>Coming soon! 🙂</h1>
         </div>
 
     </div>
