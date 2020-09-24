@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    @import "../../styles/variables.scss";
+    height: 30px;
+    padding: 10px;
+    background-color: $primary-green;
+    align-items: center;
+    svg {
+    }
+}
