@@ -1,10 +1,21 @@
-import '../styles/globals.scss'
+import "../styles/globals.scss";
+import { ThemeProvider } from "styled-components";
 
 // import App from "next/app";
-import type { AppProps /*, AppContext */ } from 'next/app'
+import type { AppProps /*, AppContext */ } from "next/app";
+
+const theme = {
+  colors: {
+    primary: "#0070f3",
+  },
+};
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -19,4 +30,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 //   return { ...appProps }
 // }
 
-export default MyApp
+export default MyApp;
